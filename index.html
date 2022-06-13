@@ -16,7 +16,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
 
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
 	<body>
@@ -69,7 +69,9 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-					<button class="button" data-modal-open>Заказать услугу</button>
+					<button class="button button--hero" data-modal-open>
+						Заказать услугу
+					</button>
 				</div>
 			</section>
 
@@ -364,7 +366,7 @@
 				</div>
 			</section>
 			<!--! Клиенты -->
-			<section class="section">
+			<section class="section clients">
 				<div class="container">
 					<h2 class="section__title">Постоянные клиенты</h2>
 					<ul class="clients__list">
@@ -502,7 +504,9 @@
 								placeholder="E-mail"
 							/>
 						</label>
-						<button type="submit" class="button">Подписаться</button>
+						<button type="submit" class="button button--position">
+							Подписаться
+						</button>
 					</form>
 				</div>
 			</div>
@@ -518,7 +522,7 @@
 					<p class="modal__text">Имя</p>
 					<label class="modal__label">
 						<input name="name" class="modal__input" type="text" />
-						<svg class="icons-label" width="12" height="12">
+						<svg class="modal__icons" width="12" height="12">
 							<use href="./images/sprite.svg#person"></use>
 						</svg>
 					</label>
@@ -555,12 +559,14 @@
 							name="check"
 							class="visually-hidden icon-box"
 						/>
-						<span class="icon-check"></span>
+						<span class="modal__icon-check"></span>
 						Соглашаюсь с рассылкой и принимаю &nbsp
-						<a href="index.html" class="checkbox-link"> Условия договора </a>
+						<a href="index.html" class="modal__checkbox-link">
+							Условия договора
+						</a>
 					</label>
 
-					<button type="submit" class="button form">Отправить</button>
+					<button type="submit" class="button button--form">Отправить</button>
 				</form>
 			</div>
 		</div>
